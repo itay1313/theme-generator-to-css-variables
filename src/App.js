@@ -97,25 +97,24 @@ export default function App() {
 
   const Variables = createGlobalStyle`
   :root {
-  --primary: ${prims.normal};
-  --primary-focus: ${prims.light};
-  --primary-content: ${prims.normal};
-  --secondary: ${prims.secondary};
-  --secondary-focus: #a255ff;
-  --secondary-content: #0100ca;
-  --link-color: #64379f;
-  --link-color-focus: #64379fc5;
-  --link-color-content: #ffffff;
-  --info: #2094f3;
-  --success: #009485;
-  --warning: #ff9900;
-  --error: #ff5724;
-  --body-background: ${prims.lightest};
-  --body-text: ${prims.darkest};
-  --footer-background: #0a00b6;
-  --footer-text: ${prims.opposite};
-  --button-background: ${prims.opposite};
-  --button-text: ${prims.normal};
+            --primary: ${prims.normal};
+            --primary-focus: ${prims.light};
+            --primary-content: ${prims.normal};
+            --secondary: ${prims.secondary};
+            --secondary-focus: ${prims.lighter};
+            --secondary-content: ${prims.secondarytext};
+            --link-color: ${prims.light};
+            --link-color-focus: ${prims.light};
+            --info: #2094f3;
+            --success: #009485;
+            --warning: #ff9900;
+            --error: #ff5724; 
+            --body-background: ${prims.lightest};
+            --body-text: ${prims.darkest};
+            --footer-background: #0a00b6;
+            --footer-text: ${prims.opposite};
+            --button-background: ${prims.secondary};
+            --button-text: ${prims.secondarytext};
 }
 body {
   color: var(--body-text);
@@ -185,18 +184,10 @@ body {
             --primary-focus: ${prims.light};
             --primary-content: ${prims.normal};
             --secondary: ${prims.secondary};
-            --secondary-focus: #a255ff;
-            --secondary-content: #0100ca;
-            --link-color: #64379f;
-            --link-color-focus: #64379fc5;
-            --link-color-content: #ffffff;
-            --neutral: #3d4451;
-            --neutral-focus: #2a2e37;
-            --neutral-content: #ffffff;
-            --base-100: #ffffff;
-            --base-200: #f9fafb;
-            --base-300: #d1d5db;
-            --base-content: #1f2937;
+            --secondary-focus: ${prims.lighter};
+            --secondary-content: ${prims.secondarytext};
+            --link-color: ${prims.light};
+            --link-color-focus: ${prims.light};
             --info: #2094f3;
             --success: #009485;
             --warning: #ff9900;
@@ -205,9 +196,9 @@ body {
             --body-text: ${prims.darkest};
             --footer-background: #0a00b6;
             --footer-text: ${prims.opposite};
-            --button-background: ${prims.opposite};
-            --button-text: ${prims.normal};
-        }
+            --button-background: ${prims.secondary};
+            --button-text: ${prims.secondarytext};
+        }   
         `}</pre>
         </Opposite>
       </div>
