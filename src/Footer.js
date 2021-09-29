@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export const Footer = () => (
   <div className="flex">
@@ -21,7 +21,9 @@ export const Footer = () => (
       />
     </form>
     <div>
-      <a href="https://itaycode.com">ItayCode</a>
+      <a href="https://itaycode.com" target="_blank">
+        ItayCode
+      </a>
     </div>
   </div>
-);
+)

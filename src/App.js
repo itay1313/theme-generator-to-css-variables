@@ -105,13 +105,6 @@ export default function App() {
   --link-color: #64379f;
   --link-color-focus: #64379fc5;
   --link-color-content: #ffffff;
-  --neutral: #3d4451;
-  --neutral-focus: #2a2e37;
-  --neutral-content: #ffffff;
-  --base-100: #ffffff;
-  --base-200: #f9fafb;
-  --base-300: #d1d5db;
-  --base-content: #1f2937;
   --info: #2094f3;
   --success: #009485;
   --warning: #ff9900;
@@ -119,7 +112,7 @@ export default function App() {
   --body-background: ${prims.lightest};
   --body-text: ${prims.darkest};
   --footer-background: #0a00b6;
-  --footer-text: ;
+  --footer-text: ${prims.opposite};
   --button-background: ${prims.opposite};
   --button-text: ${prims.normal};
 }
@@ -133,8 +126,8 @@ body {
     <div className="App">
       <Variables />
       <div className="flexcenter">
-        <h1>Theme color generator</h1>
-        <h2>Pick a text and background color</h2>
+        <h1>Theme generator to css variables</h1>
+        <h2>Choose your primary color</h2>
       </div>
       <div className="flexcenter" style={{ display: "block" }}>
         <div>
