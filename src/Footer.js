@@ -21,7 +21,7 @@ export const Footer = () => (
       />
     </form>
     <div>
-      <a href="https://itaycode.com" target="_blank">
+      <a href="https://itaycode.com" target="_blank" rel="noopener noreferrer">
         ItayCode
       </a>
     </div>

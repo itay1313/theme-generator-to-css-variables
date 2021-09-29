@@ -45,10 +45,10 @@ const Opposite = styled.div`
 `
 
 export default function App() {
-  const [textColor, setTextColor] = React.useState("#fff")
+  // const [textColor, setTextColor] = React.useState("#fff")
   const [bgColor, setBgColor] = React.useState("#000")
   const [primaryColor, setPrimaryColor] = React.useState("#570df8")
-  const [perc, setPerc] = React.useState([])
+  // const [perc, setPerc] = React.useState([])
   const [prims, setPrims] = React.useState({})
 
   // React.useEffect(() => {
@@ -178,34 +178,36 @@ body {
         </div>
         <Opposite prim={prims} bgColor={bgColor}>
           <h2>CSS Variables For your Theme - </h2>
-          <pre>{`:root {
-         --primary: ${prims.normal};
-         --primary-focus: ${prims.light};
-         --primary-content: ${prims.normal};
-         --secondary: ${prims.secondary};
-         --secondary-focus: #a255ff;
-         --secondary-content: #0100ca;
-         --link-color: #64379f;
-         --link-color-focus: #64379fc5;
-         --link-color-content: #ffffff;
-         --neutral: #3d4451;
-         --neutral-focus: #2a2e37;
-         --neutral-content: #ffffff;
-         --base-100: #ffffff;
-         --base-200: #f9fafb;
-         --base-300: #d1d5db;
-         --base-content: #1f2937;
-         --info: #2094f3;
-         --success: #009485;
-         --warning: #ff9900;
-         --error: #ff5724;
-         --body-background: ${prims.lightest};
-         --body-text: ${prims.darkest};
-         --footer-background: #0a00b6;
-         --footer-text: ;
-         --button-background: ${prims.opposite};
-         --button-text: ${prims.normal};
-        }`}</pre>
+          <pre>{`
+        :root {
+            --primary: ${prims.normal};
+            --primary-focus: ${prims.light};
+            --primary-content: ${prims.normal};
+            --secondary: ${prims.secondary};
+            --secondary-focus: #a255ff;
+            --secondary-content: #0100ca;
+            --link-color: #64379f;
+            --link-color-focus: #64379fc5;
+            --link-color-content: #ffffff;
+            --neutral: #3d4451;
+            --neutral-focus: #2a2e37;
+            --neutral-content: #ffffff;
+            --base-100: #ffffff;
+            --base-200: #f9fafb;
+            --base-300: #d1d5db;
+            --base-content: #1f2937;
+            --info: #2094f3;
+            --success: #009485;
+            --warning: #ff9900;
+            --error: #ff5724; 
+            --body-background: ${prims.lightest};
+            --body-text: ${prims.darkest};
+            --footer-background: #0a00b6;
+            --footer-text: ${prims.opposite};
+            --button-background: ${prims.opposite};
+            --button-text: ${prims.normal};
+        }
+        `}</pre>
         </Opposite>
       </div>
       <Footer />
