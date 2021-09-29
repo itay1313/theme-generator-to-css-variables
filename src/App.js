@@ -15,15 +15,6 @@ const squareStyle = {
 const Button = styled.button`
   color: ${(p) => p.prim.opposite};
   background: ${(p) => p.prim.normal};
-
-  &:hover {
-    background: ${(p) =>
-      tinycolor(p.bgColor).isDark() ? p.prim.light : p.prim.dark};
-    color: ${(p) =>
-      tinycolor(p.bgColor).isDark()
-        ? p.prim.oppositeLight
-        : p.prim.oppositeDark};
-  }
 `
 
 const Card = styled.div`
