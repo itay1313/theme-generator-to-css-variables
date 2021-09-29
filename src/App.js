@@ -111,10 +111,12 @@ export default function App() {
             --error: #ff5724; 
             --body-background: ${prims.lightest};
             --body-text: ${prims.darkest};
-            --footer-background: #0a00b6;
-            --footer-text: ${prims.opposite};
-            --button-background: ${prims.secondary};
-            --button-text: ${prims.secondarytext};
+            --footer-background: ${prims.oppositeLight};
+            --footer-text: ${prims.light};
+            --button-background: ${prims.normal};
+            --button-text: ${prims.opposite};
+            --button-background-secondary: ${prims.secondary};
+            --button-text-secondary: ${prims.secondarytext};
 }
 body {
   color: var(--body-text);
@@ -194,10 +196,12 @@ body {
             --error: #ff5724; 
             --body-background: ${prims.lightest};
             --body-text: ${prims.darkest};
-            --footer-background: #0a00b6;
-            --footer-text: ${prims.opposite};
-            --button-background: ${prims.secondary};
-            --button-text: ${prims.secondarytext};
+            --footer-background: ${prims.oppositeLight};
+            --footer-text: ${prims.light};
+            --button-background: ${prims.normal};
+            --button-text: ${prims.opposite};
+            --button-background-secondary: ${prims.secondary};
+            --button-text-secondary: ${prims.secondarytext};
         }   
         `}</pre>
         </Opposite>
