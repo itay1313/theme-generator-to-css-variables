@@ -1,16 +1,16 @@
-import React from "react";
-import tinycolor from "tinycolor2";
-import styled from "@emotion/styled";
-import "./styles.css";
-import { ColorBlock } from "./ColorBlock";
-import { Footer } from "./Footer";
+import React from "react"
+import tinycolor from "tinycolor2"
+import styled from "@emotion/styled"
+import "./styles.css"
+import { ColorBlock } from "./ColorBlock"
+import { Footer } from "./Footer"
 
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components"
 
 const squareStyle = {
   height: "50px",
-  width: "50px"
-};
+  width: "50px",
+}
 
 const Button = styled.button`
   color: ${(p) => p.prim.opposite};
@@ -24,14 +24,14 @@ const Button = styled.button`
         ? p.prim.oppositeLight
         : p.prim.oppositeDark};
   }
-`;
+`
 
 const Card = styled.div`
   background: ${(c) =>
     tinycolor(c.bgColor).isDark() ? c.prim.light : c.prim.dark};
   color: ${(c) =>
     tinycolor(c.bgColor).isDark() ? c.prim.oppositeLight : c.prim.oppositeDark};
-`;
+`
 
 const Opposite = styled.div`
   padding: 0 1rem 1rem 1rem;
@@ -42,14 +42,14 @@ const Opposite = styled.div`
   color: ${(c) => (tinycolor(c.bgColor).isDark() ? c.prim.light : c.prim.dark)};
   background: ${(c) =>
     tinycolor(c.bgColor).isDark() ? c.prim.oppositeLight : c.prim.oppositeDark};
-`;
+`
 
 export default function App() {
-  const [textColor, setTextColor] = React.useState("#fff");
-  const [bgColor, setBgColor] = React.useState("#000");
-  const [primaryColor, setPrimaryColor] = React.useState("#362EBB");
-  const [perc, setPerc] = React.useState([]);
-  const [prims, setPrims] = React.useState({});
+  const [textColor, setTextColor] = React.useState("#fff")
+  const [bgColor, setBgColor] = React.useState("#000")
+  const [primaryColor, setPrimaryColor] = React.useState("#570df8")
+  const [perc, setPerc] = React.useState([])
+  const [prims, setPrims] = React.useState({})
 
   // React.useEffect(() => {
   //   setPerc(
@@ -73,7 +73,7 @@ export default function App() {
       secondarytext: tinycolor
         .mostReadable(tinycolor(primaryColor).spin(-90).toHexString(), [
           "#000",
-          "#fff"
+          "#fff",
         ])
         .toHexString(),
       opposite: tinycolor
@@ -82,17 +82,17 @@ export default function App() {
       oppositeLight: tinycolor
         .mostReadable(tinycolor(primaryColor).lighten(20).toHexString(), [
           "#000",
-          "#fff"
+          "#fff",
         ])
         .toHexString(),
       oppositeDark: tinycolor
         .mostReadable(tinycolor(primaryColor).darken(20).toHexString(), [
           "#000",
-          "#fff"
+          "#fff",
         ])
-        .toHexString()
-    });
-  }, [primaryColor]);
+        .toHexString(),
+    })
+  }, [primaryColor])
 
   const Variables = createGlobalStyle`
   :root {
@@ -127,7 +127,7 @@ body {
   color: var(--body-text);
   background-color: var(--body-background);
 }
-`;
+`
 
   return (
     <div className="App">
@@ -153,7 +153,7 @@ body {
             prim={prims}
             bgColor={bgColor}
             style={{
-              padding: "10px"
+              padding: "10px",
             }}
           >
             <h4>Hey I'm a Subtitle</h4>
@@ -169,7 +169,7 @@ body {
                 background: prims.secondary,
                 color: prims.secondarytext,
                 padding: "10px",
-                marginLeft: "1rem"
+                marginLeft: "1rem",
               }}
             >
               Secondary
@@ -217,5 +217,5 @@ body {
       </div>
       <Footer />
     </div>
-  );
+  )
 }
