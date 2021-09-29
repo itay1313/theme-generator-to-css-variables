@@ -46,6 +46,7 @@ const Opposite = styled.div`
 
 export default function App() {
   // const [textColor, setTextColor] = React.useState("#fff")
+  // eslint-disable-next-line
   const [bgColor, setBgColor] = React.useState("#000")
   const [primaryColor, setPrimaryColor] = React.useState("#570df8")
   // const [perc, setPerc] = React.useState([])
