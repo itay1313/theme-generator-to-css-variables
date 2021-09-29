@@ -19,7 +19,7 @@ const Button = styled.button`
 
 const Card = styled.div`
   background: ${(c) =>
-    tinycolor(c.bgColor).isDark() ? c.prim.light : c.prim.dark};
+    tinycolor(c.bgColor).isDark() ? c.prim.lighter : c.prim.dark};
   color: ${(c) =>
     tinycolor(c.bgColor).isDark() ? c.prim.oppositeLight : c.prim.oppositeDark};
 `
