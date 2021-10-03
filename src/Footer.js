@@ -39,10 +39,10 @@ export const Footer = () => (
       >
         Tweet
       </a>
-      <a href="https://itaycode.com" target="_blank">
+      <a rel="noopener noreferrer" href="https://itaycode.com" target="_blank">
         itaycode
       </a>
-      <a href="https://com-mando.com" target="_blank">
+      <a rel="noopener noreferrer" href="https://com-mando.com" target="_blank">
         com-mando
       </a>
     </div>
