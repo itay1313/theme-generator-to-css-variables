@@ -20,7 +20,13 @@ export const Footer = () => (
         height="1"
       />
     </form> */}
-    <div>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: "1rem",
+      }}
+    >
       <a
         href="https://twitter.com/share?ref_src=twsrc%5Etfw"
         className="twitter-share-button"
@@ -32,6 +38,12 @@ export const Footer = () => (
         data-show-count="false"
       >
         Tweet
+      </a>
+      <a href="https://itaycode.com" target="_blank">
+        itaycode
+      </a>
+      <a href="https://com-mando.com" target="_blank">
+        com-mando
       </a>
     </div>
   </div>
